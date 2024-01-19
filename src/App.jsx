@@ -1,19 +1,15 @@
-import BuySellButton from './components/buySellButtons';
-import SimpleAreaChart from './components/chart';
-import Wallet from './components/cryptoWalletCard';
 import Header from './components/header'
+import NavBar from './components/navigationBar';
+import Wallet from './pages/wallet';
 
-const cryptoCurrency = {
-  'name' : 'bitcoin',
-  'code' : 'BTC'
-}
 const App = () => {
   return (
     <div className="app">
       <Header />
-      <Wallet currencyName={cryptoCurrency.name} />
-      <SimpleAreaChart />
-      <BuySellButton currencyCode={cryptoCurrency.code} />
+      <div className='main'>
+        <Wallet />
+      </div>
+      <NavBar />
     </div>
   );
 }

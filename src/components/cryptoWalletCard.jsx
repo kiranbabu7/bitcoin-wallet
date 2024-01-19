@@ -1,15 +1,15 @@
 import { useState } from "react"
 import BuySellButton from "./buySellButtons"
 
-function Wallet({currencyName}) { 
+function WalletCard({currencyName}) { 
     const crptyo = {
         "bitcoin": {
             'name' : "Bitcoin",
             'code' : "BTC",
             'wallet_balance' : 2.034634,
             "value_in_usd": "$19.500 USD",
-            "profit" : 2,          // value in percentage
-            "loss" : 0         // value in percentage
+            "profit" : 0,          // value in percentage
+            "loss" : 2         // value in percentage
         },
     }
 
@@ -68,4 +68,4 @@ function Wallet({currencyName}) {
     )
 }
 
-export default Wallet
+export default WalletCard
